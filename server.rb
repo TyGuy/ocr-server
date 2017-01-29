@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'sinatra/activerecord'
 require './lib/lumberjack'
 
 class Server < Sinatra::Base

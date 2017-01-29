@@ -1,6 +1,6 @@
 require 'pry'
-require './server'
 require './config/dotenv'
+require './server'
 require './config/environments'
 
 def require_dir(dir)

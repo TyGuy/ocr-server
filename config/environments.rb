@@ -6,7 +6,8 @@ def database_url
     'development' => 'DATABASE_URL_DEV',
   )
 
-  db_url_key = db_url_hash[ENV['RACK_ENV']]
+  env = ENV['RACK_ENV'] || 'development'
+  db_url_key = db_url_hash[env]
 
   ENV[db_url_key]
 end
