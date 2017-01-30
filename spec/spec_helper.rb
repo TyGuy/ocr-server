@@ -18,6 +18,8 @@ RSpec.configure do |config|
   # This is for Rack "controller" tests in Sinatra
   config.include RSpecMixin
 
+  config.color = true
+
   # This causes the host group and examples to inherit metadata
   # from the shared context.
   config.shared_context_metadata_behavior = :apply_to_host_groups
